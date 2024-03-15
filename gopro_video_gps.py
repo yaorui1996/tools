@@ -2,18 +2,21 @@ import os
 import glob
 
 
-fp = r"C:\Users\yaorui\Pictures\iCloud Photos\Photos"
-fp1 = r"C:\Users\yaorui\Downloads\temp1"
-fp2 = r"C:\Users\yaorui\Downloads\temp2"
-os.chdir(fp2)
+os.chdir(r"C:\Users\yaorui\Downloads\temp2")
 
+videos = glob.glob("*.MP4")
+images = glob.glob("*.JPG")
 
-# os.popen(f"copy \"{fp1}\\*\" \"{fp2}\\*\"").readlines()
+for fn in images:
+    print(fn, end='\t')
+    name = ''
+    res = os.popen(f"exiftool -b -m -ImageDescription {fn}").readlines()
+    if len(res) > 0:
+        name = res[0].replace("DCIM\\100GOPRO\\","")
+        os.popen(f"rename {fn} {name}").readlines()
+    print(name)
 
-fns = glob.glob("*.MP4")
-# fn = "GX010021.MP4"
-
-for fn in fns:
+for fn in videos:
     print(fn, end='\t')
     model = ''
     gps = ''
