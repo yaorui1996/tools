@@ -1,0 +1,15 @@
+SiiNunit
+{
+live_stream_def : _nameless.165.d347.2000 {
+ stream_data: 4
+ stream_data[0]: "http://relay.181.fm:8050|181.FM - 90's Country|90s|EN|128|0"
+ stream_data[1]: "https://lhttp-hw.qtfm.cn/live/20207760/64k.mp3|90后潮流音悦台|folk|CN|128|0"
+
+ stream_data[2]: "https://lhttp-hw.qtfm.cn/live/5022391/64k.mp3?app_id=web&ts=66cdd5e1&sign=c97cfae34adde101de7d4f2aa276cb16|Easy Fm|folk|CN|128|0"
+
+ stream_data[3]: "https://lhttp-hw.qtfm.cn/live/20500187/64k.mp3|云梦音乐台|folk|CN|128|0"
+
+}
+
+}
+
